@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Chatbot Response</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .chat-container { max-width: 500px; margin: 50px auto; text-align: center; }
+        .response { margin-top: 20px; font-weight: bold; color: blue; }
+        button { padding: 10px 20px; }
+    </style>
+</head>
+<body>
+<div class="chat-container">
+    <h1>Chatbot Response</h1>
+    <div class="response">
+        <p th:text="${response}">Response will appear here.</p>
+    </div>
+    <a href="/chatbot" class="btn">Go Back</a>
+</div>
+</body>
+</html>
